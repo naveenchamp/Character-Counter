@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main container (two-column layout) */
+.main-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Left section */
+.left-container {
+  flex: 1;
+  background-color: #ffbf1f;
+  color: #0f172a;
+  padding: 40px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Box for image or list */
+.display-box {
+  background-color: #ffc533;
+  flex: 1;
+  color: black;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Image styling */
+.empty-img {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: auto;
+  align-self: center;
+}
+
+/* Right section */
+.right-container {
+  flex: 1;
+  padding: 40px;
+  background-color: #0f172a;
+}
+
+.right-container h1 {
+  font-size: 28px;
+  color: #ffbf1f;
+  margin-bottom: 20px;
+}
+
+/* Input + Button wrapper */
+.input-box {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Input */
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-box input:focus {
+  border: 2px solid #ffbf1f;
+}
+
+/* Button */
+.input-box button {
+  background-color: #ffbf1f;
+  color: #1e293b;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  background-color: #272c47;
+  color: #ffbf1f;
+}
+
+/* List Items */
+ul {
+  list-style-type: none;
+  padding: 0;
+  align-self: flex-start;
+}
+
+ul li {
+  background-color: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
